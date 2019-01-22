@@ -1,6 +1,8 @@
 #!/usr/bin/python2
 
 import os
-import sys
 
-file_name = 
+path=os.getcwd()
+file=os.listdir(path)
+for i in file:
+print i +" "
