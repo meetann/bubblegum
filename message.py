@@ -1,6 +1,6 @@
 import socket,thread
 def send():
-    	rec_ip="192.168.10.235"
+    	rec_ip="192.168.1.5"
     	rec_port=6500   #  port >6000  are generally free to use 
     	#  calling  UDP  protocol 
     	#socket.AF_INET--->ipv4  , socket.SOCK_DGRAM--->  UDP 
@@ -15,7 +15,7 @@ def send():
     		#  this is for receiving from  sender 
     		# print  s.recvfrom(10)
 def recv():
-    	rec_ip="192.168.10.105"
+    	rec_ip="192.168.1.4"
     	rec_port=6500  #  port >6000  are generally free to use 
     	s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     	s.bind((rec_ip,rec_port))    # proving  a way to connect 
